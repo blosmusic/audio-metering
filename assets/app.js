@@ -25,7 +25,6 @@ function updateMeter() {
     maxNormalized
   );
 
-
   // Adjust meter height based on the normalized value
   const meterHeight = clampedValue * 100 + "%";
   meterElement.style.height = meterHeight;
@@ -46,8 +45,6 @@ function updateMeter() {
   // Call the function again on the next animation frame
   requestAnimationFrame(updateMeter);
 }
-
-
 
 async function main() {
   // Start the audio context
